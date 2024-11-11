@@ -20,7 +20,7 @@ repositories {
 dependencies {
 	// Spring
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
+//	implementation "org.springframework.boot:spring-boot-starter-data-jpa"
 	implementation "org.springframework.boot:spring-boot-configuration-processor"
 	implementation "org.springframework.boot:spring-boot-starter-security"
 	implementation "org.springframework.boot:spring-boot-starter-data-redis"
@@ -31,7 +31,7 @@ dependencies {
 	implementation 'com.auth0:java-jwt:4.4.0'
 
 	// Database
-	implementation "mysql:mysql-connector-java"
+	implementation "mysql:mysql-connector-java:8.0.33"
 	implementation "org.postgresql:postgresql"
 	implementation 'redis.clients:jedis:3.7.0'
 	implementation 'org.mongodb:mongo-java-driver:3.12.14'
@@ -43,7 +43,7 @@ dependencies {
 	implementation 'org.hibernate.validator:hibernate-validator:6.2.0.Final'
 
 	testImplementation "org.hsqldb:hsqldb"
-	testImplementation "org.hibernate:hibernate-entitymanager"
+	testImplementation "org.hibernate:hibernate-entitymanager:5.6.15.Final"
 	testImplementation "org.springframework.boot:spring-boot-starter-test"
 	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
 }
