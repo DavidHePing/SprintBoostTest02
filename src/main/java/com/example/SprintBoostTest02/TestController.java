@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @ResponseBody
-    @GetMapping(value = "/Test")
+    @GetMapping(value = "/test")
     public String testGet(){
         return "Hello World";
     }
